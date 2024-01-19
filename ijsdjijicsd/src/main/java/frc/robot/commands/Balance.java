@@ -14,7 +14,7 @@ public class Balance extends CommandBase {
   @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
   private final RomiDrivetrain m_drivebase;
   private final RomiGyro m_RomiGyro;
-  PIDController m_PIDController = new PIDController(0, 0, 0);
+  PIDController m_PIDController = new PIDController(0.05, 0, 0);
   private boolean isDetected = false;
 
   /**
